@@ -1,0 +1,26 @@
+name: codex-prompt-generator
+description: >
+  根据需求文档生成Codex编码提示词的技能。
+  该技能能够分析用户提供的需求文档，
+  并自动生成结构化、优化的Codex编码提示词，
+  帮助开发者更高效地使用Codex模型生成代码。
+
+inputs:
+  - name: requirement_doc
+    type: string
+    description: 需求文档内容
+    required: true
+
+outputs:
+  - name: codex_prompt
+    type: string
+    description: 为Codex模型优化的编码提示词
+
+config:
+  version: 1.0.0
+  author: Claude Code
+  tags:
+    - codex
+    - prompt-engineering
+    - code-generation
+    - ai-assistant

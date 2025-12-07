@@ -9,12 +9,17 @@
   },
   "plugins": [
     {
-      "name": "example-skills",
-      "description": "Collection of example skills demonstrating various capabilities including skill creation, MCP building, visual design, algorithmic art, internal communications, web testing, artifact building, Slack GIFs, and theme styling",
-      "source": "./",
+      "name": "codex-prompt-generator",
+      "description": "根据需求文档生成Codex编码提示词的技能。该技能能够分析用户提供的需求文档，并自动生成结构化、优化的Codex编码提示词，帮助开发者更高效地使用Codex模型生成代码。",
+      "source": "./skills/codex-prompt-generator",
       "strict": false,
       "skills": [
-
+        {
+          "name": "codex-prompt-generator",
+          "description": "根据需求文档生成Codex编码提示词的技能",
+          "entrypoint": "codex_prompt_generator.py",
+          "config": "codex_prompt_generator.yaml"
+        }
       ]
     }
   ]
